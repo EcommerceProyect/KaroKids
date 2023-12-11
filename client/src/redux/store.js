@@ -1,9 +1,10 @@
-import React from 'react'
+import { configureStore } from '@reduxjs/toolkit'
+import products from './slices/products'
+import user from './slices/user'
 
-const store = () => {
-  return (
-    <div>store</div>
-  )
-}
-
-export default store
+export default configureStore({
+  reducer: {
+    products,
+    user,
+  },
+})
