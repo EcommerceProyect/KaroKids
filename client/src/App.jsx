@@ -7,14 +7,13 @@ import Login from './components/login/Login'
 
 function App() {
   return (
-    <>
+    <div>
       <Navbar />
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Card />} />
       </Routes>
-    </>
+    </div>
   )
 }
-
 export default App
