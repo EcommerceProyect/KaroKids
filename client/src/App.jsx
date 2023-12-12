@@ -1,15 +1,16 @@
 import React from 'react'
-import Footer from './Components/footer/footer'
+import Navbar from './components/navbar/Navbar'
 import Card from './Components/Card'
+import Login from './components/login/Login'
+import Footer from './Components/footer/footer'
 
-function App () {
+function App() {
   return (
     <div>
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    <Card/>
-    <Footer/>
+      <Navbar />
+      <Login />
+      <Card />
+      <Footer/>
     </div>
   )
 }
