@@ -26,7 +26,8 @@
     "react-refresh/only-export-components": [
       "warn",
       { "allowConstantExport": true }
-    ]
+    ],
+    "comma-dangle": ["error", "only-multiline"]
   },
   "overrides": [
     {
@@ -47,9 +48,15 @@
           "version": "detect"
         }
       },
-      "extends": ["standard", "plugin:react/recommended", "plugin:react-hooks/recommended"],
+      "extends": [
+        "standard",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended"
+      ],
       "plugins": ["react", "react-hooks"],
       "rules": {
+        "comma-dangle": ["error", "only-multiline"],
+        "space-before-function-paren": ["error", "never"]
       }
     }
   ]
