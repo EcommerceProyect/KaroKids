@@ -21,7 +21,7 @@ const Navbar = () => {
       <DropDownMenu />
       <SearchButton />
       <Button
-        link="#"
+        link="/login"
         icon={<MdOutlineLogin color="black" size={20} />}
         text="Iniciar Sesión"
       />
