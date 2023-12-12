@@ -27,7 +27,7 @@ let entries = Object.entries(sequelize.models);
 let capsEntries = entries.map((entry) => [entry[0][0].toUpperCase() + entry[0].slice(1), entry[1]]);
 Object.assign(sequelize.models, ...capsEntries);
 
-const { } = sequelize.models;
+// const { } = sequelize.models;
 
 module.exports = {
 
