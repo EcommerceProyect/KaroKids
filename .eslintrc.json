@@ -22,9 +22,11 @@
   },
   "plugins": ["react-refresh", "react", "react-hooks"],
   "rules": {
-   "react/prop-types": "off",
-   "space-before-function-paren": 0,
-   "comma-dangle": [2, "always-multiline"]
+    "react/react-in-jsx-scope": "off",
+    "react-refresh/only-export-components": [
+      "warn",
+      { "allowConstantExport": true }
+    ]
   },
   "overrides": [
     {
