@@ -1,13 +1,15 @@
 import React from 'react'
 import Navbar from './components/navbar/Navbar'
+import Card from './components/Card'
 
 import './App.css'
 
-function App() {
+const App = () => {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
       <Navbar />
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Card />
     </>
   )
 }
