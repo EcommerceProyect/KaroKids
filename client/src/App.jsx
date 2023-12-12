@@ -1,12 +1,17 @@
 import React from 'react'
+import Navbar from './components/navbar/Navbar'
+import Card from './components/Card'
+import Login from './components/login/Login'
 
 import './App.css'
 
-function App () {
+function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <>
+      <Navbar />
+      <Login />
+      <Card />
+    </>
   )
 }
 
