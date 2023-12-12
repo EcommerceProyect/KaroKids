@@ -4,7 +4,9 @@ import React from 'react'
 const Button = ({ link, text, icon }) => {
   return (
     <Link to={link} className="flex flex-col items-center">
-      <button className="flex flex-col items-center p-2">{icon}</button>
+      <button className="flex flex-col items-center p-2  border border-black rounded-sm mt-1">
+        {icon}
+      </button>
       <span className="text-black">{text}</span>
     </Link>
   )
