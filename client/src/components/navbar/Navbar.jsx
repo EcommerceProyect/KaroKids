@@ -8,7 +8,7 @@ const Navbar = () => {
       <input type="search" placeholder="Search..." />
       <Button
         link="#"
-        icon={<MdOutlineLogin color="black" size={20} />}
+        icon={<MdOutlineLogin color="black" size={25} />}
         text="Iniciar Sesion"
       />
 
