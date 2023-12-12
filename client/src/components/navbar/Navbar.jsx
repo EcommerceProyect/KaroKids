@@ -11,11 +11,12 @@ import {
   MdOutlineLogin,
   MdOutlineLogout,
   MdPersonOutline,
+  MdPersonAddAlt1,
 } from 'react-icons/md'
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between gap-2">
+    <nav className="flex items-center justify-between gap-2 bg-primary">
       <img src={logo} alt="logo KaroKids" className="w-28" />
 
       <DropDownMenu />
@@ -24,6 +25,12 @@ const Navbar = () => {
         link="/login"
         icon={<MdOutlineLogin color="black" size={20} />}
         text="Iniciar Sesión"
+      />
+
+      <Button
+        link="#"
+        icon={<MdPersonAddAlt1 color="black" size={20} />}
+        text="Registrarse"
       />
 
       <Button

@@ -11,7 +11,11 @@ const SearchButton = () => {
   return (
     <div>
       {search ? (
-        <input type="search" placeholder=" Buscar..." className="rounded-md" />
+        <input
+          type="search"
+          placeholder=" Buscar..."
+          className="rounded-md border border-black mx-1 bg-transparent"
+        />
       ) : null}
 
       <button onClick={handleSearchClick}>
