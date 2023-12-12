@@ -6,7 +6,7 @@ const { PORT } = process.env;
 
 conn.sync({alter:true})
 .then(() =>{
-    app.listen(() => {
+    app.listen(PORT,() => {
         console.log(`Servidor iniciado en el puerto  ${PORT}`);
     })
 })
