@@ -4,13 +4,13 @@ import Card from './Components/Card'
 
 function App () {
   return (
-    <>
+    <div>
     <h1 className="text-3xl font-bold underline">
       Hello world!
     </h1>
     <Card/>
     <Footer/>
-    </>
+    </div>
   )
 }
 
