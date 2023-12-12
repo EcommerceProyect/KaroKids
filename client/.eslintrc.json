@@ -26,8 +26,7 @@
     "react-refresh/only-export-components": [
       "warn",
       { "allowConstantExport": true }
-    ],
-    "comma-dangle": ["error", "only-multiline"]
+    ]
   },
   "overrides": [
     {
@@ -57,7 +56,6 @@
       "rules": {
         "react/prop-types": "off",
         "space-before-function-paren": 0,
-
         "comma-dangle": [2, "always-multiline"],
         "multiline-ternary": "off"
       }
