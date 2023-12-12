@@ -1,7 +1,12 @@
+require("dotenv").config()
 const app = require("./src/app");
+const {conn} = require("./src/db");
+const { PORT } = process.env;
 
-const PORT = 3000
 
-app.listen(PORT,()=>{
-    console.log("server iniciado en el puerto ", PORT);
-});
+conn.sync({alter:true})
+.then(() =>{
+    app.listen(() => {
+        console.log(`Servidor iniciado en el puerto  ${PORT}`);
+    })
+})
