@@ -8,6 +8,7 @@ const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME } = process.env;
 const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}?ssl=true`, {
     logging: false,
     native: false, 
+
 }); // ssl= true soluciona los conflictos con los ssl de autenticacion de Render
 
 const basename = path.basename(__dirname);
