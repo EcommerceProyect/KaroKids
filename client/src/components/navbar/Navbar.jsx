@@ -1,21 +1,54 @@
 import React from 'react'
+// components
+import SearchButton from '../searchButton/SearchButton'
+import DropDownMenu from '../dropDownMenu/DropDownMenu'
+
+// icons
 import Button from '../linkButtons/LinkButtons'
-import { MdOutlineLogin, MdOutlineShoppingCart } from 'react-icons/md'
+import logo from '../../assets/karokidslogo.png'
+import { LiaShoppingBagSolid } from 'react-icons/lia'
+import {
+  MdOutlineLogin,
+  MdOutlineLogout,
+  MdPersonOutline,
+  MdPersonAddAlt1,
+} from 'react-icons/md'
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between gap-2">
-      <input type="search" placeholder="Search..." />
+    <nav className="flex items-center justify-between gap-2 bg-primary">
+      <img src={logo} alt="logo KaroKids" className="w-28" />
+
+      <DropDownMenu />
+      <SearchButton />
       <Button
-        link="#"
-        icon={<MdOutlineLogin color="black" size={25} />}
-        text="Iniciar Sesion"
+        link="/login"
+        icon={<MdOutlineLogin color="black" size={20} />}
+        text="Iniciar Sesión"
       />
 
       <Button
         link="#"
-        icon={<MdOutlineShoppingCart color="black" size={25} />}
+        icon={<MdPersonAddAlt1 color="black" size={20} />}
+        text="Registrarse"
+      />
+
+      <Button
+        link="#"
+        icon={<MdPersonOutline color="black" size={20} />}
+        text="Perfil"
+      />
+
+      <Button
+        link="#"
+        icon={<LiaShoppingBagSolid color="black" size={20} />}
         text="Carrito de compras"
+      />
+
+      <Button
+        link="#"
+        icon={<MdOutlineLogout color="black" size={20} />}
+        text="Cerrar sesión"
       />
     </nav>
   )

@@ -47,9 +47,17 @@
           "version": "detect"
         }
       },
-      "extends": ["standard", "plugin:react/recommended", "plugin:react-hooks/recommended"],
+      "extends": [
+        "standard",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended"
+      ],
       "plugins": ["react", "react-hooks"],
       "rules": {
+        "react/prop-types": "off",
+        "space-before-function-paren": 0,
+        "comma-dangle": ["error', 'never"],
+        "multiline-ternary": "off"
       }
     }
   ]

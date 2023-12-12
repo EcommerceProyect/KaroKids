@@ -1,16 +1,18 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+// components
 import Navbar from './components/navbar/Navbar'
-import Card from './components/Card'
-import Login from './components/login/Login'
-import './App.css'
-import Card from './Components/Card/Card'
+import Card from './components/Card/Card'
+import Login from './views/login/Login'
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Login />
-      <Card />
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<Card />} />
+      </Routes>
     </div>
   )
 }

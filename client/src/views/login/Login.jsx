@@ -24,8 +24,13 @@ const Login = () => {
 
   return (
     <form>
-      <label htmlFor="email">E-mail</label>
-      <input name="email" id="email" onChange={handleChange}></input>
+      <label htmlFor="email">E-mail:</label>
+      <input
+        name="email"
+        id="email"
+        onChange={handleChange}
+        className="border border-black rounded-md mx-1"
+      ></input>
 
       <label htmlFor="password">Password</label>
       <input
@@ -33,9 +38,14 @@ const Login = () => {
         name="password"
         id="password"
         onChange={handleChange}
+        className="border border-black rounded-md mx-1"
       ></input>
 
-      <button type="submit" onClick={handleSubmit}>
+      <button
+        type="submit"
+        onClick={handleSubmit}
+        className="border border-black rounded-md mx-1 px-2 py-1"
+      >
         Login!
       </button>
     </form>
