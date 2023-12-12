@@ -1,31 +1,49 @@
-const {Datatypes} = require('sequelize');
+const {DataTypes} = require('sequelize');
 
 module.exports = (sequelize) => {
    sequelize.define('Users', {
     id:{
-        type: Datatypes.UUID,
-        defaultValue: Datatypes.UUIDV4,
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
         primaryKey: true
     },
     name:{
-        type: Datatypes.STRING,
-        allowNull: false
+        type: DataTypes.STRING(50),
+        allowNull: false,
+        validate:{
+            len:[1, 50],
+            message: 'El nombre debe tener entre 1 y 50 caracteres'
+        }
     },
     last_name:{
-        type: Datatypes.STRING,
-        allowNull: false
+        type: DataTypes.STRING(30),
+        allowNull: false,
+        validate:{
+            len:[1, 30],
+            message: 'El apellido debe tener entre 1 y 30 caracteres'
+        }
     },
     email:{
-        type: Datatypes.STRING,
-        allowNull: false
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true,
+        validate:{
+            isEmail: true
+        }
     },
     password:{
-        type: Datatypes.STRING,
-        allowNull: false
+        type: DataTypes.STRING,
+        allowNull: true,
     },
     registration_type:{
-        type: Datatypes.STRING,
-        allowNull: false
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate:{
+            isIn: {
+                args: [['local', 'google']],
+                msg: 'El tipo de registro debe ser "local" o "google".'
+            }
+        }
     }
    })
 }
