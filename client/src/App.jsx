@@ -8,11 +8,11 @@ import Register from './components/register/Register'
 function App() {
   return (
     <div>
-      {/* <Navbar />
-      <Login /> */}
+      <Navbar />
+      <Login />
       <Register />
-      {/* <Card />
-      <Footer /> */}
+      <Card />
+      <Footer />
     </div>
   )
 }
