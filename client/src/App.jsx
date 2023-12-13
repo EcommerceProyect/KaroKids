@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './components/navbar/Navbar'
-import Card from './Components/Card'
+import Card from './Components/Card/Card'
 import Login from './components/login/Login'
 import Footer from './Components/footer/footer'
 
