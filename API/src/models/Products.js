@@ -11,8 +11,7 @@ module.exports = (sequelize) => {
             type: DataTypes.STRING(50),
             allowNull: false,
             validate:{
-                len:[1,50],
-                message: "El nombre del producto debe tener entre 1 y 50 caracteres"
+                len:[1,50]
             }
         },
         description: {

@@ -1,11 +1,9 @@
 const { Router } = require("express");
 const { getProducts } = require("../handlers/getProducts");
-
+const {createProduct} = require("../handlers/createProduct");
 const router = Router();
 
-router.get("/",(req,res) => {
-    res.status(200).json({ message: "peticion get de ejemplo" });
-})
+router.post("/products",createProduct)
 
 router.get("/products",getProducts);
 
