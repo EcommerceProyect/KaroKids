@@ -12,7 +12,7 @@ module.exports = (sequelize) => {
         allowNull: false,
         validate:{
             len:[1, 50],
-            mes: 'El nombre debe tener entre 1 y 50 caracteres'
+            msg: 'El nombre debe tener entre 1 y 50 caracteres'
         }
     },
     last_name:{
@@ -20,7 +20,7 @@ module.exports = (sequelize) => {
         allowNull: false,
         validate:{
             len:[1, 30],
-            mes: 'El apellido debe tener entre 1 y 30 caracteres'
+            msg: 'El apellido debe tener entre 1 y 30 caracteres'
         }
     },
     email:{
