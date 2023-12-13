@@ -1,8 +1,6 @@
 import React from 'react'
-import Navbar from './components/navbar/Navbar'
-import Card from './components/Card'
-import Login from './components/login/Login'
-import './App.css'
+import Navbar from './Components/navbar/Navbar'
+import Login from './Components/login/Login'
 import Card from './Components/Card/Card'
 
 function App() {
