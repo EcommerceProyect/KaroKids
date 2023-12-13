@@ -9,5 +9,4 @@ router.get("/products",getProducts);
 
 // router.get("/user",getUser());
 
-
 module.exports = router;
