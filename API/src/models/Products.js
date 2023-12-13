@@ -12,7 +12,12 @@ module.exports = (sequelize) => {
             allowNull: false,
             validate:{
                 len:[1,50],
-                message: "El nombre del producto debe tener entre 1 y 50 caracteres"
+                notNull:{
+                    msg: "El nombre del producto debe tener entre 1 y 50 caracteres"
+                },
+                notEmpty:{
+                    msg:"El nombre del producto no puede estar vacío "
+                }
             }
         },
         description: {
