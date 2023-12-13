@@ -18,7 +18,6 @@ module.exports = (sequelize) => {
                 notEmpty:{
                     msg:"El nombre del producto no puede estar vacío "
                 }
-
             }
         },
         description: {
