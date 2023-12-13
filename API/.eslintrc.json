@@ -1,0 +1,14 @@
+{
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": "eslint-config-standard",
+    "rules": {
+      "semi": ["error", "always"],
+      "quotes": ["error", "single"],
+      "no-console": "off",
+      "import/no-unresolved": "error", // Puede ser útil incluso con require
+      "import/no-extraneous-dependencies": "off" // Desactivando para proyectos con require
+    }
+  }
